@@ -41,7 +41,7 @@ It is also advised that you review AWS' [IAM documentation](https://docs.aws.ama
 
 ### Deploying To EKS
 
-The first thing you will need to do is to define your Kubernetes deployment service, using the [CodeShip Kubernetes deployment container]((https://github.com/CodeShip-library/kubectl-connection-demo). You will add the following to your [codeship-services.yml file]({{ site.baseurl }}{% link _pro/builds-and-configuration/services.md %}):
+The first thing you will need to do is to define your Kubernetes deployment service, using the [CodeShip Kubernetes deployment container](https://github.com/CodeShip-library/kubectl-connection-demo). You will add the following to your [codeship-services.yml file]({{ site.baseurl }}{% link _pro/builds-and-configuration/services.md %}):
 
 
 ```yaml

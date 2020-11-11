@@ -23,13 +23,13 @@ categories:
 
 By using Anchore you can be sure that your container images are secure and compliant.
 
-The [Anchore documentation](https://anchore.freshdesk.com/support/home) does a great job of providing more information, in addition to the setup instructions below.
+The [Anchore documentation](https://docs.anchore.com/current) does a great job of providing more information, in addition to the setup instructions below.
 
 ## CodeShip Pro
 
 ### Setting up Anchore Engine service
 
-[Install Anchore Engine](https://anchore.freshdesk.com/support/solutions/articles/36000020728-overview)
+[Install Anchore Engine](https://docs.anchore.com/current/docs/engine/quickstart)
 
 A running Anchore Engine is required, this does not need to be run within the CodeShip infrastructure as long as the HTTP(s) endpoint of the Anchore Engine is accessible.
 

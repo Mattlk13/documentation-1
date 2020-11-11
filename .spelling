@@ -72,7 +72,6 @@ api
 apis
 apparmor
 appcfg
-appcues
 appname
 appranix
 appranix.sh
@@ -128,6 +127,7 @@ ci-guide
 cli
 cli-based
 cloudbees
+cloudbees.com
 clojure
 cloudfoundry
 codacy
@@ -191,13 +191,11 @@ filename
 filesystem
 flowdock
 freetds
-fullstory
 gcloud
 geckodriver
 gemfile
 gemfile.lock
 gemfile.lock.
-gemnasium
 gh
 gh_pages
 github
@@ -255,6 +253,7 @@ k8s
 laravel
 leiningen
 lftp
+librato
 libsodium
 libxml
 libxslt
@@ -291,7 +290,6 @@ mysql
 NAME.azurecr.io
 namespace
 natively
-newrelic
 nginx
 nip.io
 node.js
@@ -401,12 +399,14 @@ sftp
 sha256sums
 signup
 simplecov
+sisense
 slimerjs
 snyk
 sourceclear
 spn
 sqlite
 statefiles
+statuspage
 subdomain
 subfolders
 sublicense
@@ -452,9 +452,6 @@ webkit
 webpack
 webserver
 wget
-whitelist
-whitelisted
-whitelisting
 whitespace
 whos
 wildcard

@@ -21,7 +21,7 @@ tags:
   - git
   - on premise
   - enterprise
-  - whitelisting
+  - static
 categories:
   - About CodeShip  
   - Account
@@ -92,9 +92,9 @@ If you don't expect to be pushing code, and are mainly setting up CodeShip for o
 
 **Note**: Users of cloud SCMs, who authenticate with oAuth, do not need to supply usernames as we get the username as part of the authentication workflow.
 
-## IP Whitelisting
+## Static IP Addresses
 
-We have an IP Whitelisting option, which allows you to provide access to your git server, from just eight specific IP addresses. See [IP Whitelisting]({{ site.baseurl }}{% link _general/account/whitelisting.md %}) documentation for more details.
+We have a static IP addresses feature, which allows you to provide access to your git server, from just eight specific IP addresses. See [Static IP Addresses]({{ site.baseurl }}{% link _general/account/static-ip-addresses.md %}) documentation for more details.
 
 ## SCM Feature Requests
 

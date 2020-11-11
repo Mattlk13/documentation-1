@@ -7,7 +7,7 @@ tags:
   - team management
   - teams
   - account
-  - whitelisting
+  - static
 categories:
   - Account
   - Security
@@ -130,7 +130,7 @@ In order to change the account name, navigate to the _Settings_ page of your acc
 
 Account names are required to be unique. Changing the account name will also change the dashboard url - `app.codeship.com/<your_account_name>` - for that account.
 
-On the account page, you also have the option to enable the IP Whitelisting feature. Read more about that in the [IP Whitelisting]({{ site.baseurl }}{% link _general/account/whitelisting.md %}) documentation to see if it is something your organization needs.
+On the account page, you also have the option to enable the static IP addresses feature. Read more about that in the [Static IP Addresses]({{ site.baseurl }}{% link _general/account/static-ip-addresses.md %}) documentation to see if it is something your organization needs.
 
 ## Delete Your Organization Account
 

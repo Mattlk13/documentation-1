@@ -24,9 +24,9 @@ menus:
 
 [Codacy](https://www.codacy.com) is an automated code coverage service. Starting with Codacy and CodeShip is fast and easy.
 
-By using Codacy you can help enforce higher standards of code quality and transparency with your engineering tea.
+By using Codacy you can help enforce higher standards of code quality and transparency with your engineering team.
 
-[Their documentation](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo) does a great job of providing more information, in addition to the setup instructions below.
+[Their documentation](https://docs.codacy.com/repositories-configure/add-coverage-to-your-repo) does a great job of providing more information, in addition to the setup instructions below.
 
 ## CodeShip Pro
 
@@ -38,7 +38,7 @@ To start, you need to add your `CODACY_PROJECT_TOKEN` to the [encrypted environm
 
 Once your Codacy project ID is loaded via your environment variables, you will need to install the Codacy package into your Dockerfile via your preferred package manager.
 
-You can find specific instructions per-language over at the [Codacy documentation](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo).
+You can find specific instructions per-language over at the [Codacy documentation](https://docs.codacy.com/repositories-configure/add-coverage-to-your-repo).
 
 The next step will vary by language. Some of the Codacy packages will automatically run whenever your tests run, while some will require separate commands added to your [codeship-steps.yml file]({{ site.baseurl }}{% link _pro/builds-and-configuration/steps.md %}).
 
@@ -50,7 +50,7 @@ For instance the Rails gem will automatically update your coverage report and ex
   command: python-codacy-coverage -r coverage.xml
 ```
 
-**Note** that the above command is only for Python. We recommend reviewing [their documentation]([Their documentation](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo) for your specific language to be sure the necessary commands are run.
+**Note** that the above command is only for Python. We recommend reviewing [their documentation](https://docs.codacy.com/repositories-configure/add-coverage-to-your-repo) for your specific language to be sure the necessary commands are run.
 
 ## CodeShip Basic
 
@@ -64,14 +64,14 @@ You can do this by navigating to _Project Settings_ and then clicking on the _En
 
 Once your Codacy project ID is loaded via your environment variables, you will need to install the Codacy package via your preferred package manager in your project's [setup commands]({{ site.baseurl }}{% link _basic/quickstart/getting-started.md %}).
 
-You can find specific instructions per-language over at the [Codacy documentation](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo).
+You can find specific instructions per-language over at the [Codacy documentation](https://docs.codacy.com/repositories-configure/add-coverage-to-your-repo).
 
 The next step will vary by language. Some of the Codacy packages will automatically run whenever your tests run, while some will require separate commands added to your project's [test commands]({{ site.baseurl }}{% link _basic/quickstart/getting-started.md %}).
 
-For instance the Rails gem will automatically update your coverage report and export it to Codacy and requires no additional steps, whereas the Python package will require an additional command placed either directly in your [[test commands]({{ site.baseurl }}{% link _basic/quickstart/getting-started.md %}) or inside of a script:
+For instance the Rails gem will automatically update your coverage report and export it to Codacy and requires no additional steps, whereas the Python package will require an additional command placed either directly in your [test commands]({{ site.baseurl }}{% link _basic/quickstart/getting-started.md %}) or inside of a script:
 
 ```shell
 python-codacy-coverage -r coverage.xml
 ```
 
-**Note** that the above command is only for Python. We recommend reviewing [their documentation]([Their documentation](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo) for your specific language to be sure the necessary commands are run.
+**Note** that the above command is only for Python. We recommend reviewing [their documentation](https://docs.codacy.com/repositories-configure/add-coverage-to-your-repo) for your specific language to be sure the necessary commands are run.

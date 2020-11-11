@@ -50,13 +50,13 @@ If you need to reset your AES key you can do so by visiting _Project Settings_ >
 
 If you are using private images, you will need to authenticate with the image registries to pull and push from your account.
 
-**Note** that on Docker Hub, you can use public images without any authentication being required.
+On Docker Hub, you can use public images without authentication. Note that as of November 1, 2020, Docker introduced [rate limits](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress). Based on your usage you may need to upgrade your Docker plan.
 
 ### Encrypted Registry Account Credentials
 
 The most common way authenticate with image registries is to provide your account credentials via an encrypted `dockercfg` file. This keeps your credentials secure while allowing you to push and pull from private registry accounts.
 
-This encryption happens with our [local CLI tool]({{ site.baseurl }}{% link _pro/jet-cli/usage-overview.md %}), similar to using [encrypted environment variables]({{ site.baseurl }}{% link _pro/builds-and-configuration/environment-variables.md %}). To encrypt your image registry credentials:
+This encryption happens with our [Jet CLI tool]({{ site.baseurl }}{% link _pro/jet-cli/usage-overview.md %}), similar to using [encrypted environment variables]({{ site.baseurl }}{% link _pro/builds-and-configuration/environment-variables.md %}). To encrypt your image registry credentials:
 
 * First create an unencrypted dockercfg file using your account credentials. The dockercfg should look close to:
 
@@ -77,11 +77,11 @@ This encryption happens with our [local CLI tool]({{ site.baseurl }}{% link _pro
 
 * The newly encrypted dockercfg file will be committed to your repo and used in your [codeship-services.yml]({{ site.baseurl }}{% link _pro/builds-and-configuration/services.md %}) and [codeship-steps.yml]({{ site.baseurl }}{% link _pro/builds-and-configuration/steps.md %}) files to authenticate with your registry on pull and push.
 
-### Docker Credentials On Mac OSX
+### Docker Credentials On macOS
 
-If you are using Apple macOS, the newer versions of Docker have changed to store credentials in the macOS keychain rather than in a configuration file.
+If you are using Apple macOS, the newer versions of Docker store credentials in the macOS keychain rather than in a configuration file.
 
-We have created an easy workaround to help you get the appropriate authentication file created on macOS:
+We created a workaround to help you get the appropriate authentication file created on macOS:
 
 - First, add the following credentials, as environment variables, to a file named `credentials.env`:
 
@@ -90,6 +90,8 @@ DOCKER_USERNAME=...
 DOCKER_PASSWORD=...
 DOCKER_REGISTRY=https://index.docker.io/v1/
 ```
+
+**Note** that if your Docker Hub account has 2FA enabled, you will need to create a [personal access token](https://docs.docker.com/docker-hub/access-tokens) and use that token for `DOCKER_PASSWORD` above.
 
 - Next, run the following Docker command, which will use an image we maintain to process your credentials and create a standardized `dockercfg` file:
 

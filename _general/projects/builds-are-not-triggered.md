@@ -25,7 +25,7 @@ redirect_from:
 {:toc}
 
 {% csnote info %}
-If your builds are not getting triggered on CodeShip, it could be that we are experiencing a service interruption. Be sure to check our [status page](https://www.codeshipstatus.com) to monitor any potential issues. You can also follow the [@CodeShipStatus](https://twitter.com/codeship) account on Twitter.
+If your builds are not triggering on CodeShip, it is possible we are experiencing a service interruption. Be sure to check our [status page](https://www.codeshipstatus.com) to monitor any potential issues. You can also follow the [@CodeShipStatus](https://twitter.com/codeshipstatus) Twitter account.
 {% endcsnote %}
 
 ## Webhooks
@@ -36,13 +36,17 @@ Depending on your SCM, the process to fix this is a bit different.
 
 ### GitHub
 
-Make sure the CodeShip Github App has been installed on your Github organization that owns the repository for your project. You also need to ensure that the CodeShip Github App has been allowed to access the repository. To install or update your CodeShip Github App, go to your Github _Organization Settings_ and select the _Installed Github Apps_ menu. If the CodeShip Github App is not installed it will not show up; if it is installed click the _Configure_ button to update the list of allowed repositories.
+Make sure the CodeShip GitHub app is installed on your GitHub organization that owns the repository for your project. You also need to ensure that the CodeShip GitHub app is allowed to access the repository. To update your CodeShip GitHub app, go to your GitHub _Organization Settings_ and select the _Installed GitHub Apps_ menu. If the CodeShip GitHub app is not installed it will not show up; if it is installed click the _Configure_ button to update the list of allowed repositories.
 
 ![Github Apps Configuration]({{ site.baseurl }}/images/general/github_apps_configuration.png)
 
-### Gitlab
+#### Reinstall GitHub App
 
-Make sure a webhook for CodeShip is added under the _Webhooks_ section in the settings of your repository. The [Gitlab documentation](https://docs.gitlab.com/ce/user/project/integrations/webhooks.html) has more information.
+To reset the installation, you can uninstall and reinstall the app. Under the same _Configure_ page as above, scroll to the bottom and click the _Uninstall_ button. Once GitHub finishes removing the app, you can [install](https://github.com/apps/codeship/installations/new) it in your organization again.
+
+### GitLab
+
+Make sure a webhook for CodeShip is added under the _Webhooks_ section in the settings of your repository. The [GitLab documentation](https://docs.gitlab.com/ce/user/project/integrations/webhooks.html) has more information.
 
 ### Bitbucket
 

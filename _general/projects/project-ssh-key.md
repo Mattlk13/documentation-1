@@ -20,19 +20,17 @@ redirect_from:
 * include a table of contents
 {:toc}
 
-For communication between your CodeShip project and outside via SSH, you will need your project's SSH public key which you can find in your project settings.
+For communication between your CodeShip project and outside via SSH, you will need your project's SSH public key which you can find in your project settings. This key is also automatically added to your source control provider so CodeShip can clone your repository for builds.
 
 * Select a project and then click _Project Settings_ in the upper right corner
 * Then click _General_ in the upper right corner
-* Scroll down until you find the _SSH public key_ section
-
-![SSH Public Key]({{ site.baseurl }}/images/general/sshpublickey.png)
+* View the SSH key in the _Keys_ section in the upper right corner
 
 If you need more information on how to use SSH and similar tools, see [Deployment via FTP, SFTP, SCP, RSYNC, and SSH]({{ site.baseurl }}{% link _basic/continuous-deployment/deployment-with-ftp-sftp-scp.md %}).
 
 ## Reset the SSH Key
 
-If you need to reset the SSH key pair for the project you can use the _Reset project SSH key_ button. This will generate a new SSH key pair and also add the new key to your source control provider.
+If you need to reset the SSH key pair for the project you can use the _Reset SSH Key_ button. This will generate a new SSH key pair and also add the new key to your source control provider.
 
 ## Use Case Examples
 

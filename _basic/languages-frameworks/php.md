@@ -33,7 +33,7 @@ phpenv versions
 ### Ubuntu 18.04
 By default we use {{ site.data.basic.defaults.php }}
 
-Specific versions: 5.6.40, 7.0.33, 7.1.33, 7.2.28, 7.3.15 and 7.4.3
+Specific versions: 5.6.40, 7.0.33, 7.1.33, 7.2.34, 7.3.23 and 7.4.11
 
 ***Do not rely on the specific versions we have as this can change at any time and could break your build.***
 
@@ -180,8 +180,6 @@ You can access it in your tests on 127.0.0.1:8000.
 
 Also take a look at the PHP built-in webserver docs in the
 [PHP documentation](https://secure.php.net/manual/en/features.commandline.webserver.php)
-
-Thanks to [Jeff Donios](https://github.com/doniosjm) for the tip.
 
 ### Exiting Tests
 

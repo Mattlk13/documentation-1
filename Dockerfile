@@ -1,6 +1,6 @@
-FROM ruby:2.6.5-slim-buster
+FROM ruby:2.6.6-slim-buster
 
-ENV CACHE_BUST=2019-10-28 \
+ENV CACHE_BUST=2020-10-04 \
     DEBIAN_DISTRIBUTION="buster" \
     DEBIAN_FRONTEND="noninteractive" \
     NODE_VERSION="12.x" \

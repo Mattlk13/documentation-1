@@ -84,19 +84,6 @@ You can learn more about organization management on CodeShip [by clicking here](
 
 - **Contributors** have read-only access to their projects. This means that they can view the project dashboard and build details but are not allowed to change project settings or open debug builds.
 
-### "3rd Party Access Restrictions" For Organizations
-
-**Note this only applies to Github.**
-
-If the repositories for a GitHub organization don't show up on CodeShip, please head over to the settings for the [CodeShip application on GitHub](https://github.com/settings/connections/applications/457423eb34859f8eb490) and in the section labeled **Organization access** either
-
-* _Request access_ if you are not an administrator for the organization. (Your request will then have to be approved by an admin.)
-* _Grant access_ if you are an administrator.
-
-Once this is done and access has been granted, the organizations repositories will show up in the repository selector on CodeShip again.
-
-See GitHub's help article on [3rd party restrictions](https://help.github.com/articles/about-third-party-application-restrictions/) for more background information about this feature.
-
 ### What if I'm not an admin of the repo?
 
 If you attempt to connect a repository to a new project, and you don't have `admin` permissions on that repository (or, for Github don't have permission to install the CodeShip Github App), there are two things you can do:

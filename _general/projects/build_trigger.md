@@ -135,10 +135,28 @@ To automatically skip builds on the same branch:
 
 1. Go to Project Settings.
 
-2. Select the _Build Triggers_ tabs.
+2. Select the _Build Triggers_ tab.
 
-3. Select the _Auto-supersede_ radio button to On.
-
+3. Select the _Auto-supersede_ radio button to On.<br />
 ![Turn on Auto-supersede]({{ site.baseurl }}/images/general/turn_on_auto_supersede.png)
 
 4. Click the _Save the Configuration_ button.
+
+5. Additionally you can check the box to stop the current running build.
+
+## Throttle builds per project (Beta)
+
+The build-throttle feature allows you to limit the number of concurrent builds that a given project can run at a time. The build-throttle is applied at the project level and affects all branches. If the limit is reached, remaining builds will be added to a queue. This is currently a beta feature and if you are interested in trying it, [contact support](https://helpdesk.codeship.com/hc/en-us).
+
+To enable build-throttle for a project:
+
+1. Go to Project Settings.
+
+2. Select the _Build Triggers_ tab.
+
+3. Select the _Throttle Concurrent Builds_ radio button to On.<br />
+![Turn on Build-throttle]({{ site.baseurl }}/images/general/turn_on_build_throttle.png)
+
+4. Enter the maximum number of builds you wish to run for this project into the _Throttle Limit_ text field.
+
+5. Click the _Save the Configuration_ button.

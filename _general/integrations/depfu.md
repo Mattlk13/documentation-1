@@ -44,7 +44,7 @@ You don't need to change anything in your [codeship-services.yml file]({{ site.b
 
 CodeShip Pro automatically builds all branches and pull requests that get pushed to GitHub, which is what Depfu needs to automate your dependency updates.
 
-**Note** that if you have limited your "running the tests" step to only certain branches using the [tag/exclude attribute]({{ site.baseurl }}{% link _pro/builds-and-configuration/steps.md %}/#limiting-steps-to-specific-branches-or-tags), make sure the Depfu branches are whitelisted. All Depfu branches start with `depfu/`.
+**Note** that if you have limited your "running the tests" step to only certain branches using the [tag/exclude attribute]({{ site.baseurl }}{% link _pro/builds-and-configuration/steps.md %}/#limiting-steps-to-specific-branches-or-tags), make sure the Depfu branches are allowed. All Depfu branches start with `depfu/`.
 
 
 ## CodeShip Basic

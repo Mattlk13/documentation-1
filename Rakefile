@@ -84,7 +84,7 @@ task :htmlproofer do
     },
     :http_status_ignore => [999],
     :file_ignore => [/google1a85968316265362.html/],
-    :url_ignore => [/lftp.yar.ru/, /nip.io/, /xip.io/],
+    :url_ignore => [/guide.blazemeter.com/, /lftp.yar.ru/, /nip.io/, /twitter.com/, /xip.io/],
     :url_swap => {
       'https://documentation.codeship.com' => '',
     }

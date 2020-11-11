@@ -38,6 +38,8 @@ For our implementation on CodeShip, we have chosen to rely on mobile apps that c
 Depending on your mobile OS, you can get one of these apps: [Google Authenticator](https://support.google.com/accounts/answer/1066447) (iOS, Android, Blackberry) or [Authenticator](https://www.microsoft.com/en-us/store/p/authenticator/9wzdncrfj3rj) (Windows Phone).
 There are a lot of other authenticator apps available, so check your app store if you're looking for something else than what either of these two offer.
 
+Note: If you're seeing errors when setting up 2FA on your account, your clock may be off. Please re-sync the servers in your Authenticator app settings and then try again. 
+
 ## Enabling 2FA
 
 Once you have decided on an authenticator app, and have installed it on your device, you can go to your Personal Settings in CodeShip and enable 2FA.

@@ -56,13 +56,17 @@ rvm use jruby-JRUBY_VERSION_YOU_WANT_TO_USE --install
 
 ## Dependencies
 
-You can install dependencies using [bundler](https://bundler.io) in your [setup commands]({{ site.baseurl }}{% link _basic/quickstart/getting-started.md %}).
-
-For example:
+You can install dependencies using [Bundler](https://bundler.io) in your [setup commands]({{ site.baseurl }}{% link _basic/quickstart/getting-started.md %}#configuring-your-setup-commands):
 
 ```shell
-gem install bundler
+gem install bundler -v BUNDLER_VERSION_YOU_WANT_TO_USE
 bundle install
+```
+
+In some cases you may need to update [RubyGems](https://rubygems.org) first with:
+
+```shell
+gem update --system
 ```
 
 ### Dependency Cache

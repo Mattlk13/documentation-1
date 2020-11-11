@@ -47,3 +47,11 @@ If you want to run a specific command only on one branch use the following synta
 ```shell
 if [ "$CI_BRANCH" == "master" ]; then YOUR_COMMAND; fi
 ```
+
+### Example Using A Pattern
+
+If you want to use a pattern instead of a specific value, you need to follow the correct syntax. For example: if you want to run a command for all branches that start with `feature/`. Here is the syntax you would use:
+
+```shell
+if [[ "$CI_BRANCH" =~ "feature/"* ]]; then YOUR_COMMAND; fi
+```

@@ -31,6 +31,20 @@ You need to activate them with `CREATE EXTENSION` as explained in the [Extension
 
 ## Versions
 
+### 12
+
+PostgreSQL version **12** is running on port `5434` and configured (almost) identical to the others. Make sure to specify the correct port in your project configuration if you want to test against this version.
+
+{% csnote info %}
+PostgreSQL 12 includes PostGIS version 3.0.
+{% endcsnote %}
+
+For Rails based projects, please add the following command to your _Setup Commands_ to work around the auto-configuration in place.
+
+```shell
+sed -i "s|5432|5434|" "config/database.yml"
+```
+
 ### 11
 
 PostgreSQL version **11** is running on port `5433` and configured (almost) identical to the others. Make sure to specify the correct port in your project configuration if you want to test against this version.
@@ -81,20 +95,6 @@ For Rails based projects, please add the following command to your _Setup Comman
 sed -i "s|5432|5435|" "config/database.yml"
 ```
 
-### 9.4
-
-PostgreSQL version **9.4** is running on port `5434` and configured (almost) identical to the others. Make sure to specify the correct port in your project configuration if you want to test against this version.
-
-{% csnote info %}
-PostgreSQL 9.4 includes PostGIS version 2.5.
-{% endcsnote %}
-
-For Rails based projects, please add the following command to your _Setup Commands_ to work around the auto-configuration in place.
-
-```shell
-sed -i "s|5432|5434|" "config/database.yml"
-```
-
 ### pg_dump
 You may experience a `pg_dump` version mismatch with the PostgreSQL version you have configured.
 
@@ -124,7 +124,7 @@ psql -d DATABASE_NAME -p DATABASE_PORT -c 'create extension if not exists hstore
 ```
 
 ### PostGIS
-All PostgreSQL versions include [PostGIS](http://postgis.net) 2.5.
+All PostgreSQL versions include [PostGIS](http://postgis.net) 2.5, except 12 which includes 3.0.
 
 To use PostGIS, enable the extension and optionally verify the version.
 

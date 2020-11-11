@@ -29,15 +29,15 @@ categories:
 
 By using Runscope you can ship more reliable code for your teams and your customers.
 
-The [Runscope documentation](https://www.runscope.com/docs/api-testing/integrations) provides a great guide to getting started, and the instructions below have more information on integrating with CodeShip.
+The [Runscope documentation](https://guide.blazemeter.com/hc/en-us/articles/360001835558) provides a great guide to getting started, and the instructions below have more information on integrating with CodeShip.
 
 ## CodeShip Pro
 
 ### Setting Your Access Token
 
-To run your Runscope API tests on CodeShip, you will need to add your Runscope Access Token to your [encrypted environment variables]({{ site.baseurl }}{% link _pro/builds-and-configuration/environment-variables.md %}) that you encrypt and include in your [codeship-services.yml file]({{ site.baseurl }}{% link _pro/builds-and-configuration/services.md %}):
+To run your Runscope API tests on CodeShip, you will need to add your Runscope Access Token to your [encrypted environment variables]({{ site.baseurl }}{% link _pro/builds-and-configuration/environment-variables.md %}) that you encrypt and include in your [codeship-services.yml file]({{ site.baseurl }}{% link _pro/builds-and-configuration/services.md %}).
 
-You can get your access token from your [Runscope settings](https://www.runscope.com/docs/api/authentication).
+See the [Runscope documentation](https://api.blazemeter.com/api-monitoring/#authentication-process) for more details.
 
 ### Installing Runscope Dependencies And Script
 
@@ -82,9 +82,9 @@ python app.py https://api.runscope.com/radar/your_test_trigger_id/trigger?runsco
 
 ### Setting Your Access Token
 
-To run your Runscope API tests on CodeShip, you will need to add your Runscope Access Token to your CodeShip project's [environment variables]({{ site.baseurl }}{% link _basic/builds-and-configuration/set-environment-variables.md %}):
+To run your Runscope API tests on CodeShip, you will need to add your Runscope Access Token to your CodeShip project's [environment variables]({{ site.baseurl }}{% link _basic/builds-and-configuration/set-environment-variables.md %}).
 
-You can get your access token from your [Runscope settings](https://www.runscope.com/docs/api/authentication).
+See the [Runscope documentation](https://api.blazemeter.com/api-monitoring/#authentication-process) for more details.
 
 ### Installing Runscope Dependencies And Script
 

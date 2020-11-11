@@ -32,7 +32,7 @@ To be considered a processor under GDPR, we would have to store or process perso
 
 ### Your Source Code
 
-For every build that is run on CodeShip (CodeShip Basic or CodeShip Pro) we will connect to the repo and use your source code along with other artifacts as part of the build process. Once the build is complete, the build machine along with its content is destroyed and replaced with a new clean machine on the next build.
+For every build that is run on CodeShip (CodeShip Basic or CodeShip Pro) we will connect to the repository and use your source code along with other artifacts as part of the build process. Once the build is complete, the build machine along with its content is destroyed and replaced with a new clean machine on the next build.
 
 We cache dependencies between builds, so if you include a custom package or save data in the cache folder, that will be persisted and stored on CodeShip infrastructure. Since we cannot fully control what is cached, or easily access cached data, it will be up to you to ensure that no personal data, or other sensitive information, ends up being cached.
 
@@ -54,28 +54,28 @@ As a controller in the context of GDPR, we are very cognizant of what data we st
 
 ### Personal Data We Need to Store
 
-For us to be able to deliver a service, as well as live up to other regulator requirements such as SOC2, there are certain personal information that we will need to store and will not be able to later remove.
+For us to be able to deliver a service, as well as live up to other regulator requirements such as SOC2, there is certain personal information that we need to store and will not be able to later remove.
 
 We will capture and store the following data that contain personal information:
 
-* Commit Messages
-  * these usually contain a username as well as email, and sometimes full name as well
-* User Profile
+* Commit messages
+  * these usually contain a username and email, and sometimes full name as well
+* User profile
   * when you sign up, we need to know your name, email, and git username(s) for you to make use of CodeShip
-* oAuth Access
-  * in case you authenticate via Github, Bitbucket, or Gitlab, we will store the oauth token that is provided to us along with information like username etc.
+* OAuth access
+  * in case you authenticate via GitHub, Bitbucket, or GitLab, we will store the OAuth token that is provided to us along with information like username, etc.
 
 Aside from the above, we will also store the results of some of your actions, e.g. "John restarted build 345DG3AE" to be able to provide a record of who triggered certain events.
 
 #### Deleting Your User
 
-In case you no longer want to use CodeShip, you can delete your user via the Personal Settings page. This will not actually remove your information (we're obligated to keep it to be able to prove that the account existed) but we will delete any oauth token that we have on file, and make sure it will no longer be possible to authenticate as that user.
+If you no longer want to use CodeShip, you can delete your user on the Personal Settings page. This will not actually remove your information (we're obligated to keep it to be able to prove that the account existed) but we will delete any OAuth token that we have on file, and make sure it will no longer be possible to authenticate as that user.
 
 ### Other Data That We Use
 
-As part of running the CodeShip infrastructure, we use a few monitoring and error capturing tools (rollbar, papertrail, newrelic, etc.). Errors may occasionally contain personal information, such as a username, name, or email, but will never contain anything more sensitive than that. We also have a 30 day data retention policy in place for the tools, so anything older than that will be deleted.
+As part of running the CodeShip infrastructure, we use a few [monitoring and error capturing tools]({{ site.baseurl }}{% link _general/about/security.md %}#what-services-does-codeship-use). Errors may occasionally contain personal information, such as a username, name, or email, but will never contain anything more sensitive than that. We also have a 30 day data retention policy in place for the tools, so anything older than that will be deleted.
 
-Another service that we use, which captures personal information on some users, is Profitwell. This is a service that monitors payments and credit cards, and will proactively reach out to users whose credit card is about to expire. It also provides the ability to update payment information without being a CodeShip user, which is very convenient for Finance who pays the bills but have no need for an actual account.
+Another service that we use, which captures personal information on some users, is ProfitWell. This is a service that monitors payments and credit cards, and will proactively reach out to users whose credit card is about to expire. It also provides the ability to update payment information without being a CodeShip user, which is very convenient for finance who pays the bills but has no need for an actual account.
 
 ### Optional Data Capturing
 
@@ -87,8 +87,6 @@ In the future, we would also like to be more proactive in helping you improve yo
 
 When allowing us to capture how you use CodeShip, we will enable the following services:
 
-* [Fullstory](https://fullstory.com) (for optimizing our design and tracking UI issues)
-* [Appcues](https://www.appcues.com) (for communicating workflows and in-app changes)
 * [Segment](https://segment.com) (a data hub that sends data to our data warehouse)
 
 If you do opt in, but change your mind, you can easily opt out again via your Personal Settings page. Likewise, you can easily opt in on the same page, and help us improve CodeShip.
@@ -97,8 +95,8 @@ If you do opt in, but change your mind, you can easily opt out again via your Pe
 
 Any CodeShip user can request any of the following:
 
-* **Right to Erasure**: have all personal information removed from CodeShip and any 3rd party system or service where it may exist
-  * Note: this applies only to data collected as part of the optional data capture, as we're legally obligated to keep records of who has used the system etc.
+* **Right to Erasure**: have all personal information removed from CodeShip and any third-party system or service where it may exist
+  * Note: this applies only to data collected as part of the optional data capture, as we're legally obligated to keep records of who has used the system
 * **Right of Access**: receive a copy of the personal data captured by CodeShip as well as a list of other data profiles that may exist (e.g. from having opted in to the optional data capturing)
 * **Right of Rectification**: correct personal data that is incorrectly stored by CodeShip or other services
 * **Right to Restrict Processing**: disallow CodeShip from using any optionally captured data for profiling or other analysis (data will still be captured)
@@ -107,6 +105,6 @@ Any CodeShip user can request any of the following:
 * **Right to Object**: if you're not satisfied with how we capture data, respond to your requests, or otherwise comply with GDPR you can object to any outcome
 * **Right not to be subject to automated decision-making including profiling**: to avoid being included in profiling etc., do not opt in to the optional data capturing
 
-In all cases, if you want to make a request, have questions, or objections please reach out via [support@codeship.com](mailto:support@codeship.com)
+In all cases, if you want to make a request, have questions, or objections please contact [support@codeship.com](mailto:support@codeship.com).
 
-We don't limit this to just EU citizens, as we think everyone should have the same rights regardless of where they are.
+We don't limit this to just EU citizens, as we think everyone should have the same rights regardless of where they are located.
